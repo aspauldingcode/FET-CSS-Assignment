@@ -1,0 +1,243 @@
+
+/* attempt to make css styling for navigation bar */
+.navibarthingy {
+  padding-right: 40px;
+}
+
+.nav__toggle {
+  display: none; 
+}
+
+#boxiboi {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: .3vw .3vw #999;
+}
+
+.dailymemeette {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 24px; 
+  color: #b18ddb; 
+}
+
+.site-header {
+  position: relative; 
+}
+
+.site-header-thingy {
+  border-radius: 15px;
+  border: 5px solid #b18ddb ;
+  background-color: #f7dea2;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+}
+
+/* Homepage specific styling*/
+
+.HOMEsite-header-thingy {
+  border-radius: 15px;
+  border: 5px solid #b18ddb ;
+  background-color: #9366b1;
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+}
+  
+
+.HOMEmemeette {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 45px; 
+  color: #f7dea2; 
+}
+  
+.HOMEnavithing a {
+  border-radius: 15px;
+  border: 3px solid #00db87 ;
+  display: block;
+  padding: 0rem;
+  color: #f7b3b3; 
+  font-size: 24px;  
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+#HOMEboxiboi {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 29px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: .3vw .3vw #999;
+}
+
+#HOMEboxiboi:hover, #boxiboi:hover {
+  background-color: #3e8e41;
+  box-shadow: .3vw .3vw #505050;
+}
+
+#HOMEboxiboi:active, #boxiboi:active  {
+  background-color: #3e8e41;
+  box-shadow: .15vw .2vw #690000;
+  transform: translateY(5px) translateX(3px);
+}
+
+/* Display Styles differently on alternate screen sizes using @media */
+
+@media (min-width: 600px) {
+  .dailymeme-ette {
+    margin-bottom: 0rem; 
+  } 
+}
+
+@media (min-width: 600px) {
+  .site-header-thingy {
+    text-align: center;
+  } 
+}
+
+@media (min-width: 600px) {
+.navibarthingy {
+  display: inline-flex; 
+  } 
+}
+
+@media (max-width: 599px) {
+  .navibarthingy {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+  }
+    .navibarthingy.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); 
+    } 
+}
+
+@media (max-width: 599px) {
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem; 
+  } 
+}
+
+@media (min-width: 600px) {
+  .dailymeme-ette {
+    margin-bottom: 0rem; 
+  } 
+}
+
+@media (min-width: 600px) {
+  .HOMEsite-header-thingy {
+    text-align: center;
+  } 
+}
+
+@media (min-width: 600px) {
+  .HOMEnavibarthingy {
+    display: inline-flex; 
+  } 
+}
+
+/* add universal pages styling elements using class, id, and element selectors */
+
+p.center, h1.center, img.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* image specific styling options */
+
+img#rotate {
+  width: 150px;
+  background-color: yellow;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(-20deg);
+}
+
+img#parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/originals/26/f2/ce/26f2ce685457c79c3919cbe11ea687ff.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+div {
+  background-color: rgba(201, 76, 76, 0.3);}
+
+p {
+  text-shadow: #1d1d1d;
+}
+
+/* align texts */
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* different background filters based on current page */
+
+.stats {
+  backdrop-filter: grayscale(.8);
+}
+
+.about {
+  backdrop-filter: sepia(.9);
+}
+
+.contact {
+  backdrop-filter: grayscale();
+}
+
+div {
+  backdrop-filter: invert();
+}
